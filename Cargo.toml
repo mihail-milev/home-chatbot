@@ -1,0 +1,21 @@
+[package]
+name = "home-chatbot"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+matrix-sdk = "0.4.1"
+matrix-sdk-common = "0.4.1"
+tokio = { version = "1.11.0", features = ["full"] }
+regex = "1.5.4"
+reqwest = "0.11.4"
+indexmap = "=1.6.2"
+mongodb = "2.0.0"
+serde = "1.0.130"
+futures = "0.3.17"
+
+[dependencies.native-tls]
+version = "0.2.8"
+features = ["vendored"]
